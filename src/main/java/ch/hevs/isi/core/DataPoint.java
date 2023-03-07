@@ -26,7 +26,7 @@ public abstract class DataPoint {
     }
 public abstract Object getValue();
     // implementation builder
-    DataPoint(String label, boolean isOutput) {
+    public DataPoint(String label, boolean isOutput) {
         this.label = label;
         this.isOutput = isOutput;
         dataPointMap.put(label, this);
