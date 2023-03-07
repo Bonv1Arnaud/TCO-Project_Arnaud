@@ -23,12 +23,15 @@ public class DatabaseConnector implements DataPointListener {
     // push to DB
     public void pushToDatabase(String label,String value)
     {
-        System.out.println("new value of"+ label + "push to"+ value);
+        System.out.println("new value of "+ label + " equal to "+ value + " is pushed to the DB");
     }
     // print information of the value and data point
     @Override
     public void onNewValue(DataPoint dp) {
-        System.out.println("the new value" + dp.getValue() + "the data point " + dp.getLabel());
+        String _label = dp.getLabel();
+        Object _value = dp.getValue();
+
+        pushToDatabase(_label, _value.toString());
     }
 
 }

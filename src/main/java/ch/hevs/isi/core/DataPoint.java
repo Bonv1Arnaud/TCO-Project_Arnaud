@@ -39,7 +39,6 @@ public abstract Object getValue();
         BooleanDataPoint b1;
         b1 = new BooleanDataPoint("current", true);
         b1.setValue(true);
-        System.out.println(b1.getValue());
     }
 
 }

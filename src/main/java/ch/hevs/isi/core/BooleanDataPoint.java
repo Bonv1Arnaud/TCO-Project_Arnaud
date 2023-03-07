@@ -3,7 +3,7 @@ package ch.hevs.isi.core;
 import ch.hevs.isi.db.DatabaseConnector;
 
 public class BooleanDataPoint extends DataPoint {
-    boolean value;          //Value of the datapoint
+    private boolean value;          //Value of the datapoint
 
     @Override
     public Object getValue() {

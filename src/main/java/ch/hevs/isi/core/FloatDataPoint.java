@@ -1,7 +1,7 @@
 package ch.hevs.isi.core;
 
 public class FloatDataPoint extends DataPoint{
-    float value;            //Value of the data point
+    private float value;            //Value of the data point
 
     public FloatDataPoint (String _label, boolean _isOutput) {
         super(_label, _isOutput);
