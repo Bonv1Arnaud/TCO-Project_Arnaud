@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e50ec5-51cc-4603-ab54-916348a9092b" name="Changes" comment="test-intelligi">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e5e50ec5-51cc-4603-ab54-916348a9092b" name="Changes" comment="synchro-debut-projet2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/FloatDataPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/FloatDataPoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677854741206</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="synchro-debut-projet">
+      <created>1678175641382</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678175641382</updated>
+    </task>
+    <task id="LOCAL-00003" summary="synchro-debut-projet2">
+      <created>1678175752596</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678175752596</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +142,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test-intelligi" />
-    <option name="LAST_COMMIT_MESSAGE" value="test-intelligi" />
+    <MESSAGE value="synchro-debut-projet" />
+    <MESSAGE value="synchro-debut-projet2" />
+    <option name="LAST_COMMIT_MESSAGE" value="synchro-debut-projet2" />
   </component>
 </project>
