@@ -32,4 +32,14 @@ public abstract Object getValue();
         dataPointMap.put(label, this);
     }
 
+    // main
+
+    public static void main(String[] args) {
+
+        BooleanDataPoint b1;
+        b1 = new BooleanDataPoint("current", true);
+        b1.setValue(true);
+        System.out.println(b1.getValue());
+    }
+
 }
