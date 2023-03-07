@@ -4,8 +4,9 @@ import com.sun.javafx.binding.StringFormatter;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
-public class DataPoint {
+public abstract class DataPoint {
     // implementation variables
     private String label;
     private boolean isOutput;
@@ -23,7 +24,7 @@ public class DataPoint {
     public boolean isOutput() {
         return isOutput;
     }
-
+public abstract Object getValue();
     // implementation builder
     public DataPoint(String label, boolean isOutput) {
         this.label = label;
