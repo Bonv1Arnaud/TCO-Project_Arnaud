@@ -27,7 +27,7 @@ public class DataPoint {
     }
 
     // implementation builder
-    DataPoint(String label, boolean isOutput) {
+    public DataPoint(String label, boolean isOutput) {
         this.label = label;
         this.isOutput = isOutput;
         dataPointMap.put(label, this);

@@ -1,10 +1,10 @@
 package ch.hevs.isi.core;
+
 public class BooleanDataPoint extends DataPoint {
     boolean value;          //Value of the datapoint
 
-    public void BooleanDataPoint (String _label, boolean _isOutput){
-        label = _label;
-        isOuput = _isOutput;
+    public BooleanDataPoint (String _label, boolean _isOutput) {
+        super(_label, _isOutput);
     }
 
     public void setValue (boolean _value){
