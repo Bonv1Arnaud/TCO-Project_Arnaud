@@ -15,14 +15,12 @@ public class DataPoint {
     private static Map<String, DataPoint> dataPointMap = new HashMap<>();
 
     // methode getLabel
-    public String getLabel(String label) {
-        this.label = label;
+    public String getLabel() {
         return label;
     }
 
     // method isOutput
-    public boolean isOutput(boolean isOutput) {
-        this.isOutput = isOutput;
+    public boolean isOutput() {
         return isOutput;
     }
 
