@@ -9,7 +9,7 @@ public class DatabaseConnector implements DataPointListener {
     private static DatabaseConnector instance = null;
 
     // constructor
-    private DatabaseConnector() {
+    public DatabaseConnector() {
     }
 
     // implementation methode
