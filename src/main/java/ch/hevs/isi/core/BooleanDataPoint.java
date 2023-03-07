@@ -3,6 +3,11 @@ package ch.hevs.isi.core;
 public class BooleanDataPoint extends DataPoint {
     boolean value;          //Value of the datapoint
 
+    @Override
+    public Object getValue() {
+        return value;
+    }
+
     public BooleanDataPoint (String _label, boolean _isOutput) {
         super(_label, _isOutput);
     }

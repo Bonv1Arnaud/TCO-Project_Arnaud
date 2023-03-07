@@ -24,6 +24,6 @@ public class DatabaseConnector implements DataPointListener {
 
     @Override
     public void onNewValue(DataPoint dp) {
-        System.out.println("the new value"+ dp."the data point " + dp.getLabel() +);
+        System.out.println("the new value"+ dp.getValue() +"the data point " + dp.getLabel() );
     }
 }

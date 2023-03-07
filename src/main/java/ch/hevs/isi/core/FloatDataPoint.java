@@ -10,4 +10,8 @@ public class FloatDataPoint extends DataPoint{
         value = _value;
         System.out.println("Value is updated with " + _value);
     }
+
+    public Object getValue() {
+        return value;
+    }
 }
