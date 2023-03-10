@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e50ec5-51cc-4603-ab54-916348a9092b" name="Changes" comment="synchro-debut-projet2">
+    <list default="true" id="e5e50ec5-51cc-4603-ab54-916348a9092b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_08_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_08_46__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/FloatDataPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/FloatDataPoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -28,6 +29,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -47,10 +51,10 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -74,31 +78,89 @@
       <updated>1650979818345</updated>
       <workItem from="1650979821754" duration="814000" />
       <workItem from="1677145737186" duration="1073000" />
-      <workItem from="1677853063107" duration="2780000" />
-      <workItem from="1678173730426" duration="818000" />
+      <workItem from="1677853193744" duration="3193000" />
+      <workItem from="1677856451304" duration="411000" />
+      <workItem from="1678172883414" duration="12246000" />
+      <workItem from="1678448700955" duration="4574000" />
     </task>
-    <task id="LOCAL-00001" summary="test-intelligi">
-      <created>1677854741206</created>
+    <task id="LOCAL-00001" summary="commit test">
+      <created>1677854776093</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1677854741206</updated>
+      <updated>1677854776093</updated>
     </task>
-    <task id="LOCAL-00002" summary="synchro-debut-projet">
-      <created>1678175641382</created>
+    <task id="LOCAL-00002" summary="commit test">
+      <created>1677854802900</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1678175641382</updated>
+      <updated>1677854802900</updated>
     </task>
-    <task id="LOCAL-00003" summary="synchro-debut-projet2">
-      <created>1678175752596</created>
+    <task id="LOCAL-00003" summary="data point">
+      <created>1678173290569</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1678175752596</updated>
+      <updated>1678173290570</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="DataPoint implementation">
+      <created>1678177468881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678177468881</updated>
+    </task>
+    <task id="LOCAL-00005" summary="DataPoint implementation">
+      <created>1678177777698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678177777698</updated>
+    </task>
+    <task id="LOCAL-00006" summary="DataPoint getLabel, isOutput modification">
+      <created>1678178550020</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678178550020</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Data PointListener + DataConnector">
+      <created>1678180365946</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678180365947</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Data PointListener + DataConnector">
+      <created>1678180898518</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678180898518</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Data PointListener + DataConnector = commentaires">
+      <created>1678181536743</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678181536743</updated>
+    </task>
+    <task id="LOCAL-00010" summary="pushToDatabase">
+      <created>1678182668070</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678182668070</updated>
+    </task>
+    <task id="LOCAL-00011" summary="main dataPoint">
+      <created>1678183803316</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678183803316</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,23 +169,15 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="38112331-15cc-4563-ba37-018ed1fc390a">
+        <entry key="MAIN">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -132,18 +186,18 @@
             </State>
           </value>
         </entry>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test-intelligi" />
-    <MESSAGE value="synchro-debut-projet" />
-    <MESSAGE value="synchro-debut-projet2" />
-    <option name="LAST_COMMIT_MESSAGE" value="synchro-debut-projet2" />
+    <MESSAGE value="commit test" />
+    <MESSAGE value="data point" />
+    <MESSAGE value="DataPoint implementation" />
+    <MESSAGE value="DataPoint getLabel, isOutput modification" />
+    <MESSAGE value="Data PointListener + DataConnector" />
+    <MESSAGE value="Data PointListener + DataConnector = commentaires" />
+    <MESSAGE value="pushToDatabase" />
+    <MESSAGE value="main dataPoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="main dataPoint" />
   </component>
 </project>
