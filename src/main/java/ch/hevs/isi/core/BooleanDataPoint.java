@@ -1,6 +1,7 @@
 package ch.hevs.isi.core;
 
 import ch.hevs.isi.db.DatabaseConnector;
+import ch.hevs.isi.web.WebConnector;
 
 public class BooleanDataPoint extends DataPoint {
     private boolean value;          //Value of the datapoint
@@ -15,12 +16,7 @@ public class BooleanDataPoint extends DataPoint {
     }
 
     public void setValue (boolean _value){
-        DatabaseConnector dbc = new DatabaseConnector();
-
-        dbc.onNewValue(this);
-
-
         value = _value;
-        System.out.println("Value is updated with " + _value);
+        toConnectors();
     }
 }

@@ -1,5 +1,8 @@
 package ch.hevs.isi.core;
 
+import ch.hevs.isi.db.DatabaseConnector;
+import ch.hevs.isi.web.WebConnector;
+
 public class FloatDataPoint extends DataPoint{
     private float value;            //Value of the data point
 
@@ -7,8 +10,8 @@ public class FloatDataPoint extends DataPoint{
         super(_label, _isOutput);
     }
     public void setValue (float _value) {
-        value = _value;
-        System.out.println("Value is updated with " + _value);
+        _value = value;
+        toConnectors();
     }
 
     public Object getValue() {

@@ -10,7 +10,7 @@ public class WebConnector implements DataPointListener {
 
     }
 
-    public WebConnector getInstance(){
+    public static WebConnector getInstance(){
         if (instance == null){
             instance = new WebConnector();
         }
@@ -23,6 +23,6 @@ public class WebConnector implements DataPointListener {
 
     @Override
     public void onNewValue(DataPoint dp) {
-        System.out.println("the new value"+ dp.getValue() +"the data point " + dp.getLabel() );
+        pushToWeb(dp.getLabel(), dp.getValue().toString());
     }
 }

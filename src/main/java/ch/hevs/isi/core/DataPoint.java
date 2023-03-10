@@ -1,5 +1,7 @@
 package ch.hevs.isi.core;
 
+import ch.hevs.isi.db.DatabaseConnector;
+import ch.hevs.isi.web.WebConnector;
 import com.sun.javafx.binding.StringFormatter;
 
 import java.util.HashMap;
@@ -30,6 +32,11 @@ public abstract Object getValue();
         this.label = label;
         this.isOutput = isOutput;
         dataPointMap.put(label, this);
+    }
+
+    protected void toConnectors() {
+        DatabaseConnector.getInstance().onNewValue(this);
+        WebConnector.getInstance().onNewValue(this);
     }
 
     // main

@@ -14,7 +14,7 @@ public class DatabaseConnector implements DataPointListener {
 
     // implementation methode
     // create a new instance if none existed
-    public DatabaseConnector getInstance() {
+    public static DatabaseConnector getInstance() {
         if (instance == null) {
             instance = new DatabaseConnector();
         }
