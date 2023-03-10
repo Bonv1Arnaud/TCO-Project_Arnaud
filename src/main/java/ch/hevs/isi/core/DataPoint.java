@@ -1,5 +1,7 @@
 package ch.hevs.isi.core;
 
+import ch.hevs.isi.db.DatabaseConnector;
+import ch.hevs.isi.web.WebConnector;
 import com.sun.javafx.binding.StringFormatter;
 
 import java.util.HashMap;
@@ -32,6 +34,11 @@ public abstract Object getValue();
         dataPointMap.put(label, this);
     }
 
+    protected void toConnectors() {
+        DatabaseConnector.getInstance().onNewValue(this);
+        WebConnector.getInstance().onNewValue(this);
+    }
+
     // main
 
     public static void main(String[] args) {
@@ -39,7 +46,6 @@ public abstract Object getValue();
         BooleanDataPoint b1;
         b1 = new BooleanDataPoint("current", true);
         b1.setValue(true);
-        System.out.println(b1.getValue());
     }
 
 }
