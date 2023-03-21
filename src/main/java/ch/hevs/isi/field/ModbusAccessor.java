@@ -40,7 +40,6 @@ public class ModbusAccessor {
     }
 
 
-
     public void connect(String ipAddress, int port) {
         ModbusFactory modbusFactory = new ModbusFactory();
         IpParameters ip = new IpParameters();
@@ -60,5 +59,14 @@ public class ModbusAccessor {
             }
             continue;
         }
+    }
+
+    public static void main(String[] args) {
+        ModbusAccessor ma = new ModbusAccessor();
+        ma.connect("localhost", 1502);
+        System.out.println("Grid U = " + ma.readFloat(89));
+        System.out.println("Grid U = " + ma.readBoolean(89));
+        System.out.println("Solar = " + ma.writeBoolean(401, true));
+        System.out.println("Wind = " + ma.writeBoolean(405, true));
     }
 }
