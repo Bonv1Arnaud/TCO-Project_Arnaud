@@ -46,6 +46,7 @@
     </repositories>
 
     <dependencies>
+        <dependency><groupId>com.infiniteautomation</groupId><artifactId>modbus4j</artifactId><version>3.0.4</version></dependency>
         <!-- https://mvnrepository.com/artifact/org.java-websocket/Java-WebSocket -->
         <dependency>
             <groupId>org.java-websocket</groupId>
