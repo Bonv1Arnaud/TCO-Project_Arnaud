@@ -4,7 +4,7 @@ public class ModbusAccessor {
     private int regAddress;
     private float newValue;
     private boolean _newValue;
-     private static ModbusAccessor  instance = null;
+     private static ModbusAccessor instance = null;
 
     private ModbusAccessor() {
     }
@@ -12,7 +12,7 @@ public class ModbusAccessor {
 public static ModbusAccessor getInstance()
     {if( instance == null)
     {
-       instance = new ModbusAccessor(); 
+       instance = new ModbusAccessor();
     }
     return instance; }
 
