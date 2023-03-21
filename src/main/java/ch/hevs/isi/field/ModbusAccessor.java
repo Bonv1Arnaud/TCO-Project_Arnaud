@@ -1,9 +1,13 @@
 package ch.hevs.isi.field;
 
+import ch.hevs.isi.utils.Utility;
+import com.serotonin.modbus4j.ModbusFactory;
 import com.serotonin.modbus4j.ModbusMaster;
 import com.serotonin.modbus4j.code.DataType;
 import com.serotonin.modbus4j.exception.ErrorResponseException;
+import com.serotonin.modbus4j.exception.ModbusInitException;
 import com.serotonin.modbus4j.exception.ModbusTransportException;
+import com.serotonin.modbus4j.ip.IpParameters;
 import com.serotonin.modbus4j.locator.BaseLocator;
 
 public class ModbusAccessor {
@@ -11,6 +15,7 @@ public class ModbusAccessor {
     private float newValue;
     private boolean _newValue;
     private static ModbusAccessor instance = null;
+    private ModbusMaster modbusMaster;
 
     private ModbusAccessor() {
     }
@@ -25,7 +30,7 @@ public class ModbusAccessor {
     public float readFloat(int regAddress) {
         try {
             // Returns a value from the modbus network according to the given locator information
-            return (float) topMaster.getValue(BaseLocator.inputRegister(1, regAddress, DataType.FOUR_BYTE_FLOAT)); //BaseLocator is used for the adress
+            return (float) modbusMaster.getValue(BaseLocator.inputRegister(1, regAddress, DataType.FOUR_BYTE_FLOAT)); //BaseLocator is used for the adress
         } catch(ModbusTransportException e) {
             // If there was an IO error or other technical failure while sending the message
             throw new RuntimeException(e);
@@ -37,7 +42,7 @@ public class ModbusAccessor {
 
     public void writeFloat(int regAddress, float newValue) {
         try {
-            topMaster.setValue(BaseLocator.holdingRegister(1, regAddress, DataType.FOUR_BYTE_FLOAT), newValue);
+            modbusMaster.setValue(BaseLocator.holdingRegister(1, regAddress, DataType.FOUR_BYTE_FLOAT), newValue);
         } catch(ModbusTransportException e) {
             // If there was an IO error or other technical failure while sending the message
             throw new RuntimeException(e);
@@ -50,7 +55,7 @@ public class ModbusAccessor {
     public boolean readBoolean(int _regAddress) {
         try {
             // Returns a value from the modbus network according to the given locator information
-            return topMaster.getValue(BaseLocator.coilStatus(1, _regAddress));
+            return modbusMaster.getValue(BaseLocator.coilStatus(1, _regAddress));
         } catch(ModbusTransportException e) {
             // If there was an IO error or other technical failure while sending the message
             throw new RuntimeException(e);
@@ -62,7 +67,7 @@ public class ModbusAccessor {
 
     public void writeBoolean(int _regAddress, boolean _newValue) {
         try {
-            topMaster.setValue(BaseLocator.coilStatus(1, _regAddress), _newValue);
+            modbusMaster.setValue(BaseLocator.coilStatus(1, _regAddress), _newValue);
         } catch(ModbusTransportException e) {
             // If there was an IO error or other technical failure while sending the message
             throw new RuntimeException(e);
@@ -78,10 +83,10 @@ public class ModbusAccessor {
         IpParameters ip = new IpParameters();
         ip.setHost(ipAddress);
         ip.setPort(port);
-        ModbusMaster tcpMaster = modbusFactory.createTcpMaster(ip, true);
+        modbusMaster = modbusFactory.createTcpMaster(ip, true);
         while (true) {
             try {
-                tcpMaster.init();
+                modbusMaster.init();
                 break;
             } catch (ModbusInitException e) {
                 System.out.println("Unable to connect to the server");
@@ -97,9 +102,15 @@ public class ModbusAccessor {
     public static void main(String[] args) {
         ModbusAccessor ma = new ModbusAccessor();
         ma.connect("localhost", 1502);
-        System.out.println("Grid U = " + ma.readFloat(89));
-        System.out.println("Grid U = " + ma.readBoolean(89));
-        System.out.println("Solar = " + ma.writeBoolean(401, true));
-        System.out.println("Wind = " + ma.writeBoolean(405, true));
+
+        while (true){
+            System.out.println("Grid U = " + ma.readFloat(89));
+            System.out.println("Solar SW= " + ma.readBoolean(609));
+            System.out.println("Wind SW= " + ma.readBoolean(613));
+            ma.writeBoolean(401,true);
+
+            Utility.waitSomeTime(1000);
+        }
+
     }
 }
