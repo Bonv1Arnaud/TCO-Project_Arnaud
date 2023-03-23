@@ -24,4 +24,11 @@ public class FieldConnector implements DataPointListener {
     public void onNewValue(DataPoint dp){
         System.out.println("new value of " + dp.getLabel() + " push to field connector :" + dp.getValue());
     }
+
+public void getRegisterFromDataPoint(boolean bdp)
+{
+
+}
+public void write(){}
+
 }
