@@ -3,7 +3,7 @@ package ch.hevs.isi.field;
 import ch.hevs.isi.core.BooleanDataPoint;
 import ch.hevs.isi.core.FloatDataPoint;
 
-public class BooleanRegister {
+public class BooleanRegister extends ModbusRegister {
     private int adress;
     private static ModbusAccessor ma;
     private BooleanDataPoint dp;
