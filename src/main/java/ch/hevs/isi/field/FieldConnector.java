@@ -25,7 +25,7 @@ public class FieldConnector implements DataPointListener {
     public void onNewValue(DataPoint dp){
         System.out.println("new value of " + dp.getLabel() + " push to field connector :" + dp.getValue());
 
-        BooleanDataPoint bdp;
+    /*        BooleanDataPoint bdp;
         // if it's boolean
         if ( ) {
         bdp=    ModbusAccessor.getInstance().readBoolean();
@@ -35,10 +35,11 @@ public class FieldConnector implements DataPointListener {
         if () {
           bdp =  ModbusAccessor.getInstance().readFloat()
 
-        }
+        } */
 
-        // get the register address in int
-        BooleanRegister.getRegisterFromDataPoint(bdp);
+        ModbusRegister mr =BooleanRegister.getRegisterFromDataPoint(dp);
+        if ( mr != null)
+        mr.write();}
     }
 
 
