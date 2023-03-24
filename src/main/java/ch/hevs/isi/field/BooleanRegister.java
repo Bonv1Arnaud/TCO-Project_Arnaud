@@ -5,6 +5,7 @@ import ch.hevs.isi.core.FloatDataPoint;
 
 public class BooleanRegister {
     private int adress;
+    private static ModbusAccessor ma;
     private BooleanDataPoint dp;
 
     public BooleanRegister(int _adress, BooleanDataPoint _dp){
@@ -22,10 +23,7 @@ public class BooleanRegister {
         ModbusAccessor.getInstance().writeBoolean(adress,value);            // Put the value on the modbus
     }
 
-    public  BooleanRegister getRegisterFromDataPoint(BooleanDataPoint bdp){
-        BooleanRegister br = null;
-
-        return br;
+    public static void setModbusAccessor (ModbusAccessor accessor){
+        ma = accessor;
     }
-
 }
