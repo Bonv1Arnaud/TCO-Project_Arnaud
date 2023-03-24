@@ -22,7 +22,7 @@ public class BooleanRegister {
         ModbusAccessor.getInstance().writeBoolean(adress,value);            // Put the value on the modbus
     }
 
-    public BooleanRegister getRegisterFromDataPoint(BooleanDataPoint bdp){
+    public  BooleanRegister getRegisterFromDataPoint(BooleanDataPoint bdp){
         BooleanRegister br = null;
 
         return br;
