@@ -1,5 +1,6 @@
 package ch.hevs.isi.field;
 
+import ch.hevs.isi.core.BooleanDataPoint;
 import ch.hevs.isi.core.DataPoint;
 import ch.hevs.isi.core.DataPointListener;
 
@@ -23,12 +24,21 @@ public class FieldConnector implements DataPointListener {
     @Override
     public void onNewValue(DataPoint dp){
         System.out.println("new value of " + dp.getLabel() + " push to field connector :" + dp.getValue());
+
+        BooleanDataPoint bdp;
+        // if it's boolean
+        if ( ) {
+        bdp=    ModbusAccessor.getInstance().readBoolean();
+        }
+
+        // if it's float
+        if () {
+          bdp =  ModbusAccessor.getInstance().readFloat()
+
+        }
+
+        // get the register address in int
+        BooleanRegister.getRegisterFromDataPoint(bdp);
     }
 
-public void getRegisterFromDataPoint(boolean bdp)
-{
 
-}
-public void write(){}
-
-}
