@@ -3,6 +3,9 @@ package ch.hevs.isi.field;
 import ch.hevs.isi.core.BooleanDataPoint;
 import ch.hevs.isi.core.DataPoint;
 import ch.hevs.isi.core.DataPointListener;
+import ch.hevs.isi.utils.Utility;
+
+import java.io.File;
 
 public class FieldConnector implements DataPointListener {
     private static FieldConnector instance = null;
@@ -11,7 +14,7 @@ public class FieldConnector implements DataPointListener {
 
     }
 
-    public FieldConnector getInstance() {
+    public static FieldConnector getInstance() {
         if (instance == null){
             instance = new FieldConnector();
         }
@@ -25,21 +28,16 @@ public class FieldConnector implements DataPointListener {
     public void onNewValue(DataPoint dp){
         System.out.println("new value of " + dp.getLabel() + " push to field connector :" + dp.getValue());
 
-    /*        BooleanDataPoint bdp;
-        // if it's boolean
-        if ( ) {
-        bdp=    ModbusAccessor.getInstance().readBoolean();
-        }
+        ModbusRegister mr = ModbusRegister.getRegisterFromDataPoint(dp);
+        if (mr != null) mr.write();
 
-        // if it's float
-        if () {
-          bdp =  ModbusAccessor.getInstance().readFloat()
-
-        } */
-
-        ModbusRegister mr =BooleanRegister.getRegisterFromDataPoint(dp);
-        if ( mr != null)
-        mr.write();}
+        System.out.println(mr);
     }
+
+
+    public static void main(String[] args){
+
+    }
+}
 
 

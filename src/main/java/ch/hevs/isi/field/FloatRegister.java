@@ -24,7 +24,7 @@ public class FloatRegister {
     }
 
     public void write() {
-        float value = (float) dp.getValue();                                // Take the value in the datapoint
+        float value = (float) dp.getValue();                                    // Take the value in the datapoint
         ModbusAccessor.getInstance().writeFloat(adress, value);              // Put the value on the modbus
     }
 

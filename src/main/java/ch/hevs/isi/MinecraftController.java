@@ -1,5 +1,8 @@
 package ch.hevs.isi;
 
+import ch.hevs.isi.field.BooleanRegister;
+import ch.hevs.isi.field.FloatRegister;
+import ch.hevs.isi.field.ModbusRegister;
 import ch.hevs.isi.utils.Utility;
 
 public class MinecraftController {
@@ -71,8 +74,12 @@ public class MinecraftController {
         }
 
         // ------------------------------------ /DO NOT CHANGE THE FOLLOWING LINES -------------------------------------
+/*
+        new BooleanRegister();
 
-        // Start coding here ...
+        new FloatRegister();
 
+        ModbusRegister.startPolling(2500);
+*/
     }
 }

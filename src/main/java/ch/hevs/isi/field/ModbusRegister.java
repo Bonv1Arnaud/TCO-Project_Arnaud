@@ -4,6 +4,7 @@ import ch.hevs.isi.core.DataPoint;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Timer;
 
 public abstract class ModbusRegister {
     private int regAddress;
@@ -12,6 +13,12 @@ public abstract class ModbusRegister {
     public static ModbusRegister getRegisterFromDataPoint(DataPoint dp){
         return map.get(dp);
     }
+
+    public static void startPolling(long period) {
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new PollTask(),0, period);
+    }
+
     protected int getAddress(){
         return regAddress;
     }
@@ -25,4 +32,10 @@ public abstract class ModbusRegister {
     public abstract void read();
     public abstract void write();
 
+    public static void poll(){
+        for(ModbusRegister mr : map.values()) {
+            // test if datapoint is an input
+            mr.read();
+        }
+    }
 }
