@@ -1,10 +1,19 @@
 package ch.hevs.isi;
 
-import ch.hevs.isi.field.BooleanRegister;
-import ch.hevs.isi.field.FloatRegister;
-import ch.hevs.isi.field.ModbusRegister;
+import ch.hevs.isi.field.*;
+import ch.hevs.isi.utils.ReadCSV;
 import ch.hevs.isi.utils.Utility;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
+/**
+ * Use to connect minecraft to an influxDB database, a specified web controller and also to regulate the electrical network.
+ * an intelligent control is in place allowing an efficient management of the network and the different actors.
+ *
+ * @author Arnaud Bonvin & TCO teacher
+ * @version v1.0
+ */
 public class MinecraftController {
 
     public static boolean ERASE_PREVIOUS_DATA_INB_DB        = false;
@@ -74,12 +83,26 @@ public class MinecraftController {
         }
 
         // ------------------------------------ /DO NOT CHANGE THE FOLLOWING LINES -------------------------------------
-/*
-        new BooleanRegister();
 
-        new FloatRegister();
+        // Creation of measurement points
+        ReadCSV.readDataRegister("C:\\dev\\GridLab_ArnaudxElise\\src\\main\\java\\ch\\hevs\\isi\\ModbusMap.csv");
 
-        ModbusRegister.startPolling(2500);
-*/
+        // Run modbus connection
+        try {
+            ModbusAccessor.getInstance().connect("localhost", 1502);
+        } catch (Exception e) {
+            System.out.println("MODBUS_ERROR : " + e);
+            System.exit(05);
+        }
+
+        Timer t = new Timer();
+
+        t.scheduleAtFixedRate(new TimerTask() {
+            public void run(){
+                ModbusRegister.poll();
+            }
+        }, 1000, 1000);
+
+
     }
 }

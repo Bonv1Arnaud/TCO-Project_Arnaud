@@ -1,31 +1,62 @@
 package ch.hevs.isi.field;
 
-import ch.hevs.isi.core.DataPoint;
 import ch.hevs.isi.core.FloatDataPoint;
 
-public class FloatRegister {
+/**
+ * Float register is used to have a link between a float datapoint and a modbus
+ * address. The class is the extension of ModbusRegister.
+ *
+ * @author Arnaud Bonvin
+ * @version v1.0
+ */
+public class FloatRegister extends ModbusRegister{
+    // Range of value possible
+    private float range;
 
-    private int adress;
-    private static ModbusAccessor ma;
+    // Offset of value
+    private float offset;
+
+    // Datapoint of the register
     private FloatDataPoint dp;
 
-    public FloatRegister(int _adress, FloatDataPoint _dp) {
-        adress = _adress;
-        dp = _dp;
+    /**
+     * <b>Constructor</b><br>
+     * Use to create an object of float register. Notice that float register is an
+     * extended classe of modbus register.
+     * @param _adress
+     * Address on the modbus
+     * @param _label
+     * Name of the value
+     * @param _isOutput
+     * Is activ if we can write and read onto
+     * @param range
+     * Range of value possible
+     * @param offset
+     * Gap between zero and the zero of the value
+     */
+    public FloatRegister(int _adress, String _label, boolean _isOutput, float range, float offset) {
+        dp = new FloatDataPoint(_label, _isOutput);                             // Create a boolean datapoint
+        setAddress(_adress);                                                    // Link the modbus adress to datapoint
+        setRegister(dp);                                                        // Add the datapoint to the register
+        ma = ModbusAccessor.getInstance();                                      // Get (and create if needed) a modbus accessor
+
+        this.range = range;
+        this.offset = offset;
     }
 
-    public static void setModbusAccessor (ModbusAccessor accessor){
-        ma = accessor;
-    }
-
+    /**
+     * Use to read a value in the modbus map
+     */
     public void read() {
-        float value = ModbusAccessor.getInstance().readFloat(adress);       // Take the value on the modbus
-        dp.setValue(value);                                                 // Put the value in the datapoint
+        dp.setValue((float)offset + range * ma.readFloat(getAddress()));        // Get the value by the adress + linearization
+        System.out.println(dp);                                                 // Display value and label of DP
     }
 
+    /**
+     * Use to write a value in the modbus map
+     */
     public void write() {
-        float value = (float) dp.getValue();                                    // Take the value in the datapoint
-        ModbusAccessor.getInstance().writeFloat(adress, value);              // Put the value on the modbus
+        ma.writeFloat(getAddress(), (dp.getValue() - offset) / range);  // Write the value in a register
     }
 
 }

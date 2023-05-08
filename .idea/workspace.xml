@@ -1,12 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Minecraft:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e50ec5-51cc-4603-ab54-916348a9092b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_08_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_08_46__Changes_.xml" afterDir="false" />
+    <list default="true" id="e5e50ec5-51cc-4603-ab54-916348a9092b" name="Changes" comment="test register + pooling task">
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/ModbusMap.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/utils/ReadCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/ch/hevs/isi/utils/Utility.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/ch/hevs/isi/utils/Utility.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/ch/hevs/isi/utils/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/ch/hevs/isi/utils/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/ch/hevs/isi/utils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/ch/hevs/isi/utils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/ch/hevs/isi/utils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/ch/hevs/isi/utils/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/hei/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/hei/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/MinecraftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/MinecraftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/BooleanDataPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/BooleanDataPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/DataPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/DataPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/DataPointListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/DataPointListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/FloatDataPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/core/FloatDataPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/db/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/db/DatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/BooleanRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/BooleanRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/FieldConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/FieldConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/FloatRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/FloatRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/ModbusAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/ModbusAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/ModbusRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/ModbusRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/field/PollTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/web/WebConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hevs/isi/web/WebConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/hevs/isi/MinecraftController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hevs/isi/MinecraftController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/hevs/isi/core/BooleanDataPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hevs/isi/core/BooleanDataPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/hevs/isi/core/DataPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hevs/isi/core/DataPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/hevs/isi/core/FloatDataPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hevs/isi/core/FloatDataPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/hevs/isi/db/DatabaseConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hevs/isi/db/DatabaseConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/hevs/isi/field/FieldConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hevs/isi/field/FieldConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/hevs/isi/web/WebConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hevs/isi/web/WebConnector.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +72,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -29,9 +80,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -47,18 +95,68 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/GridLab_ArnaudxElise&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ch.hevs.isi.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\GridLab_ArnaudxElise\src\main\java\ch\hevs\isi" />
+      <recent name="C:\dev\GridLab_ArnaudxElise\src\main\java\ch\hevs\isi\utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Minecraft">
+    <configuration name="DataPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.hevs.isi.core.DataPoint" />
+      <module name="Minecraft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hevs.isi.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.hevs.isi.db.DatabaseConnector" />
+      <module name="Minecraft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hevs.isi.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FieldConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.hevs.isi.field.FieldConnector" />
+      <module name="Minecraft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hevs.isi.field.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Minecraft" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ch.hevs.isi.MinecraftController" />
       <module name="Minecraft" />
@@ -67,6 +165,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ModbusAccessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.hevs.isi.field.ModbusAccessor" />
+      <module name="Minecraft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hevs.isi.field.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FieldConnector" />
+        <item itemvalue="Application.DataPoint" />
+        <item itemvalue="Application.ModbusAccessor" />
+        <item itemvalue="Application.DatabaseConnector" />
+        <item itemvalue="HTTP Request.rest-api | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,89 +201,94 @@
       <updated>1650979818345</updated>
       <workItem from="1650979821754" duration="814000" />
       <workItem from="1677145737186" duration="1073000" />
-      <workItem from="1677853193744" duration="3193000" />
-      <workItem from="1677856451304" duration="411000" />
-      <workItem from="1678172883414" duration="12246000" />
-      <workItem from="1678448700955" duration="4574000" />
+      <workItem from="1677853063107" duration="2780000" />
+      <workItem from="1678173730426" duration="818000" />
+      <workItem from="1679658496651" duration="10292000" />
+      <workItem from="1680260740550" duration="7723000" />
+      <workItem from="1680590313944" duration="9550000" />
+      <workItem from="1680601433888" duration="176000" />
+      <workItem from="1682074451138" duration="10703000" />
+      <workItem from="1682402195173" duration="30000" />
+      <workItem from="1682404668681" duration="10368000" />
+      <workItem from="1682541721833" duration="4523000" />
+      <workItem from="1682630921259" duration="6449000" />
+      <workItem from="1682677431786" duration="11239000" />
+      <workItem from="1682932531669" duration="17000" />
+      <workItem from="1683455342168" duration="15720000" />
+      <workItem from="1683497171993" duration="59000" />
+      <workItem from="1683584725997" duration="602000" />
     </task>
-    <task id="LOCAL-00001" summary="commit test">
-      <created>1677854776093</created>
+    <task id="LOCAL-00001" summary="test-intelligi">
+      <created>1677854741206</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1677854776093</updated>
+      <updated>1677854741206</updated>
     </task>
-    <task id="LOCAL-00002" summary="commit test">
-      <created>1677854802900</created>
+    <task id="LOCAL-00002" summary="synchro-debut-projet">
+      <created>1678175641382</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1677854802900</updated>
+      <updated>1678175641382</updated>
     </task>
-    <task id="LOCAL-00003" summary="data point">
-      <created>1678173290569</created>
+    <task id="LOCAL-00003" summary="synchro-debut-projet2">
+      <created>1678175752596</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1678173290570</updated>
+      <updated>1678175752596</updated>
     </task>
-    <task id="LOCAL-00004" summary="DataPoint implementation">
-      <created>1678177468881</created>
+    <task id="LOCAL-00004" summary="field_input_code">
+      <created>1679385707283</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1678177468881</updated>
+      <updated>1679385707283</updated>
     </task>
-    <task id="LOCAL-00005" summary="DataPoint implementation">
-      <created>1678177777698</created>
+    <task id="LOCAL-00005" summary="R/W boolean and float modbus implementation">
+      <created>1679390374972</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1678177777698</updated>
+      <updated>1679390374972</updated>
     </task>
-    <task id="LOCAL-00006" summary="DataPoint getLabel, isOutput modification">
-      <created>1678178550020</created>
+    <task id="LOCAL-00006" summary="modif mise en commun ModbusAccessor">
+      <created>1679392502265</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1678178550020</updated>
+      <updated>1679392502265</updated>
     </task>
-    <task id="LOCAL-00007" summary="Data PointListener + DataConnector">
-      <created>1678180365946</created>
+    <task id="LOCAL-00007" summary="creation classe float et boolean register">
+      <created>1679395305394</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1678180365947</updated>
+      <updated>1679395305394</updated>
     </task>
-    <task id="LOCAL-00008" summary="Data PointListener + DataConnector">
-      <created>1678180898518</created>
+    <task id="LOCAL-00008" summary="creation class boolean et float register avec methode vide">
+      <created>1679660534922</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1678180898518</updated>
+      <updated>1679660534922</updated>
     </task>
-    <task id="LOCAL-00009" summary="Data PointListener + DataConnector = commentaires">
-      <created>1678181536743</created>
+    <task id="LOCAL-00009" summary="implementation methode float et boolean register + creation ModbusRegister">
+      <created>1679663523850</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1678181536743</updated>
+      <updated>1679663523850</updated>
     </task>
-    <task id="LOCAL-00010" summary="pushToDatabase">
-      <created>1678182668070</created>
+    <task id="LOCAL-00010" summary="test register + pooling task">
+      <created>1679670505190</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1678182668070</updated>
+      <updated>1679670505190</updated>
     </task>
-    <task id="LOCAL-00011" summary="main dataPoint">
-      <created>1678183803316</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1678183803316</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,15 +297,23 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="MAIN">
+        <entry key="38112331-15cc-4563-ba37-018ed1fc390a">
           <value>
             <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
                       </list>
                     </value>
                   </entry>
@@ -186,18 +322,38 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit test" />
-    <MESSAGE value="data point" />
-    <MESSAGE value="DataPoint implementation" />
-    <MESSAGE value="DataPoint getLabel, isOutput modification" />
-    <MESSAGE value="Data PointListener + DataConnector" />
-    <MESSAGE value="Data PointListener + DataConnector = commentaires" />
-    <MESSAGE value="pushToDatabase" />
-    <MESSAGE value="main dataPoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="main dataPoint" />
+    <MESSAGE value="test-intelligi" />
+    <MESSAGE value="synchro-debut-projet" />
+    <MESSAGE value="synchro-debut-projet2" />
+    <MESSAGE value="field_input_code" />
+    <MESSAGE value="R/W boolean and float modbus implementation" />
+    <MESSAGE value="modif mise en commun ModbusAccessor" />
+    <MESSAGE value="creation classe float et boolean register" />
+    <MESSAGE value="creation class boolean et float register avec methode vide" />
+    <MESSAGE value="implementation methode float et boolean register + creation ModbusRegister" />
+    <MESSAGE value="test register + pooling task" />
+    <option name="LAST_COMMIT_MESSAGE" value="test register + pooling task" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="13" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GridLab_ArnaudxElise$Minecraft.ic" NAME="Minecraft Coverage Results" MODIFIED="1682083652829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
